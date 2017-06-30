@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  &::before {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    @extend .row::before;
+    clear: both;
+  }
+}
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+@function anchoColumnas($columns) {
+   @return percentage(($columns/12));
+}
+@for $numColumna from 1 through 12 {
+  .col-#{$numColumna} {
+    width: anchoColumnas($numColumna);
+  }
+}
+
+[class*="offset-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+
+@function offset($columnsOffset) {
+   @return percentage(($columnsOffset/12));
+}
+@for $columnaOff from 1 through 12 {
+  .offset-#{$columnaOff} {
+    margin-left: offset($columnaOff);
+  }
+}

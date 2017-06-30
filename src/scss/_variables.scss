@@ -1,0 +1,16 @@
+$titulos : #424242;
+$fecha: #5f6368;
+$texto : #646464;
+$azul: #4285f4;
+$color-hover: #888888;
+$font-small: Roboto;
+$font-fechas:  16px roboto mono;
+$font-subtitles: Product Sans;
+$size-subtitles: 24px;
+$linea-azul: 0px -5px  $azul;
+
+@for $contenedores from 1 through 7 {
+  #{'.marg-azul'} {
+    box-shadow: $linea-azul;
+  }
+}

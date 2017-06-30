@@ -1,0 +1,206 @@
+@import "variables";
+@import "mixin";
+@import "grid";
+
+.img-logo {
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.search {
+  position: relative;
+  right: 0;
+  margin-top: 5%;
+  margin-bottom: -6%;
+
+  .lupa {
+    width: 25%;
+    padding-top: 10%;
+  }
+}
+
+.menu {
+  text-align: center;
+
+  li {
+    @include list;
+
+    a {
+      @include list-style;
+    }
+  }
+}
+
+p {
+  @include parrafos;
+}
+
+span {
+  font: $font-fechas;
+  color: $fecha;
+  margin-bottom: 15%;
+}
+
+h4 {
+  @include subTitles;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin-top: 5%;
+  padding: 2%;
+}
+
+#profile {
+  .container {
+    &:hover {
+      box-shadow: 0 0 10px $color-hover;
+    }
+
+    h2 {
+      @include subTitles;
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+.img-newDesign {
+  margin-bottom: 5%;
+}
+
+.noticias {
+  padding: 5%;
+}
+
+.more-news {
+  position: relative;
+  left: 80%;
+  font-size: 17px;
+  font-family: $font-small;
+  color: #4989F4;
+  margin-top: 3%;
+}
+
+.new {
+  margin-top: 5%;
+
+  a {
+    color: #4989F4;
+    text-decoration: none;
+  }
+}
+
+.aside {
+  background: #F1F3F4;
+  padding: 0.70rem;
+}
+
+.tarjeta {
+  padding: 2%;
+
+  &:hover {
+    box-shadow: 0 0 10px $color-hover;
+  }
+}
+
+.tarjeta--azul {
+  box-shadow: $linea-azul;
+}
+
+.imagen-tarjeta {
+    width: 80%;
+    border-radius: 100%;
+}
+
+h5{
+  font-size: 18px;
+  font-family: $font-small;
+  line-height: 1.5;
+  color: #414549;
+  font-weight: 400;
+}
+
+.btn-circle {
+  float: right;
+  text-align: center;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid $color-hover;
+  border-radius: 100%;
+  box-shadow: 2px 5px 5px $color-hover;
+
+  i {
+    color: #4989F4;
+    margin-top: 23%;
+  }
+}
+
+.brand-recognition {
+  display: flex;
+}
+.text-azul {
+  color: $azul;
+  font-family: $font-small;
+  font-size: 18px;
+  float: right;
+  margin-top: -5%;
+}
+
+.icono {
+  width: 10%;
+  margin-top: 5%;
+}
+
+.icono-fb {
+  width: 7%;
+  margin-top: 5%;
+}
+
+.title-small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.p-small {
+  font-size: 14px;
+}
+
+#discover-conect{
+  .container{
+    padding: 5% 0;
+  }
+}
+
+.discover-menu {
+  a{
+    @include list-style;
+    color: $color-hover;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.small-conect {
+  padding: 0;
+  margin: 0;
+}
+
+.small-conect-ul {
+  padding: 0;
+  margin-top: 3%;
+}
+
+hr {
+  color: gray;
+}

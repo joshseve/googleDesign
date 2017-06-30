@@ -1,0 +1,33 @@
+@mixin list() {
+  list-style: none;
+  display: inline-flex;
+  padding: .75rem;
+  margin-right: 2%;
+  &:hover {
+    box-shadow: 0px 5px $color-hover;
+  }
+}
+
+@mixin list-style () {
+  text-decoration: none;
+  color: $texto;
+  font-family: $font-small;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@mixin subTitles () {
+  font-family: $font-subtitles;
+  color: $titulos;
+  font-weight: 500;
+  font-size: $size-subtitles;
+  padding: 3% 0;
+}
+
+@mixin parrafos {
+  font-family: $font-small;
+  color: $texto;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 3%;
+}
